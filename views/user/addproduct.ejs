@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form action="/addproductToDB" method="get">
+                <center><label><h1 class="heading">Add Product Section</h1></label></center>
+                <div class="form-group">
+                    <label for="img">Select Image</label>
+                    <input type="file" hidden value="Select Image" name="img" id="img" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="enter title" id="title" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" placeholder="enter title" id="description" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" name="price" placeholder="enter title" id="price" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Add Product</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+<% include ../partials/footer %>

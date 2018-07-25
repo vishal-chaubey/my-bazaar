@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>User Profile</h1>
+        <hr>
+        <h2 class="pull-center">My Orders</h2>
+        <% for(var i = 0; i < orders.length; i++){ %>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <% for(var j = 0; j < orders[i].items.length; j++) { %>
+                        <li class="list-group-item">
+                        <span class="badge"><%= orders[i].items[j].price %></span>
+                        <%= orders[i].items[j].item.title %> | <%= orders[i].items[j].qty %> units
+                        </li>
+                        <% }; %>
+                    </ul> 
+                </div>
+                <div class="panel-footer">
+                    <strong>Total:$ <%= total %> </strong>
+                </div>
+              
+            </div>
+        <% }; %>
+    </div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

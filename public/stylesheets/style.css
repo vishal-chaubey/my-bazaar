@@ -1,0 +1,49 @@
+.site_logo{
+	color: #000504 ;
+	margin-top:10px;
+	text-decoration:underline;
+	font-family:Courier;
+	font-weight: bold;
+}
+.header-bg{
+	background-color: #02c66a;
+	
+}
+.footer{
+	background:#02c66a;
+	padding:20px 0px;
+	color:#0b33fd;
+}
+.footer ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.footer ul li a{
+	color:#0b33fd;
+	font-size:15px;
+}
+.img-main-carousel{
+	max-height:200px;
+	width: 100%;
+	margin:0 auto;
+}
+@media (max-width:1200px){
+	.my_menu .pull-right{float:none !important;}
+}
+
+.thumbnail img {
+	max-height: 150px;
+}
+.thumbnail .description {
+	color :  #7d807f ;
+}
+
+.price{
+	font-weight: bold;
+	font-size: 18px;
+}
+.heading{
+	text-align: center;
+	text-decoration: underline;
+}
